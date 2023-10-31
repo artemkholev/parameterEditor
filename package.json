@@ -10,11 +10,21 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@effector/reflect": "^8.3.3",
+    "antd": "^5.10.3",
+    "compose-function": "^3.0.3",
+    "css": "^3.0.0",
+    "effector": "^22.8.7",
+    "mobx-react-lite": "^4.0.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "vit": "^0.0.1"
+    "react-router-dom": "^6.18.0",
+    "sass": "^1.69.5",
+    "vit": "^0.0.1",
+    "web-vitals": "^3.5.0"
   },
   "devDependencies": {
+    "@types/compose-function": "^0.0.32",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
