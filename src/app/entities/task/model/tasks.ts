@@ -2,8 +2,8 @@ import { createStore, combine, createEffect, createEvent } from "effector";
 import { useStore } from "effector-react";
 import { normalize, schema } from "normalizr";
 
-import { typicodeApi } from "shared/api";
-import type { Task } from "shared/api";
+import { typicodeApi } from "../../../../shared/api";
+import type { Task } from "../../../../shared/api/typicode/models";
 
 export type QueryConfig = {
   completed?: boolean;
@@ -71,7 +71,7 @@ export const $tasksFiltered = combine(
 export const $tasksListEmpty = $tasksFiltered.map((list) => list.length === 0);
 
 // При желании можно завести отдельный селектор, не завязанный на react биндинги
-const useTask = (taskId: number): import("shared/api").Task | undefined => {
+const useTask = (taskId: number): import("../../../../shared/api/typicode/models").Task | undefined => {
   return useStore($tasks)[taskId];
 };
 

@@ -2,7 +2,7 @@ import { Layout, Row, Typography } from "antd";
 // import { variant, list } from "@effector/reflect";
 // import { combine } from "effector";
 
-import { TasksFilters } from "features/tasks-filters";
+import { TasksFilters } from "../../app/features/tasks-filters";
 // import { ToggleTask } from "features/toggle-task";
 // import { TaskRow, taskModel } from "entities/task";
 import styles from "./styles.module.scss";
