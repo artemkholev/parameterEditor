@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import styles from "./styles.module.scss";
 
 export type TaskRowProps = PropsWithChildren<{
-    data: import("../../../../../shared/api").Task;
+    data: import("../../../../shared/api").Task;
     titleHref?: string;
     before?: ReactNode;
 }>;
