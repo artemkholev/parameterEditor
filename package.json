@@ -16,6 +16,7 @@
     "compose-function": "^3.0.3",
     "css": "^3.0.0",
     "effector": "^22.8.7",
+    "immer": "^10.0.3",
     "mobx-react-lite": "^4.0.5",
     "normalizr": "^3.6.2",
     "react": "^18.2.0",
