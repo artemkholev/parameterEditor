@@ -17,8 +17,7 @@
 };
 
 /** API entrypoint */
-// export const API_URL = getEnvVar("REACT_APP_API_URL");
-export const API_URL = getEnvVar("https://jsonplaceholder.typicode.com");
+export const API_URL = getEnvVar("REACT_APP_API_URL");
 
 /** Режим запуска программы */
 export const NODE_ENV = getEnvVar("NODE_ENV");

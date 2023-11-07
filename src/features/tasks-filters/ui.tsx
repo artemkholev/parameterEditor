@@ -1,4 +1,4 @@
-import { Radio } from "antd"; // ~ "shared/ui/radio"
+import { Radio } from "antd";
 import { reflect } from "@effector/reflect";
 
 import { taskModel } from "../../entities/task";

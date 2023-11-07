@@ -4,7 +4,6 @@ export type Filter = {
     config: import("../../entities/task").taskModel.QueryConfig;
 }
 
-// Описываем здесь датасет фильтров "Закрытые" / "Открытые" и т.п.
 export const filters: Record<number, Filter> = {
     1: {
         id: 1,

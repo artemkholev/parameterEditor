@@ -14,7 +14,6 @@ export type QueryConfig = {
 const setQueryConfig = createEvent<QueryConfig>();
 
 
-// В каждом эффекте так же может быть своя доп. обработка
 const getTasksListFx = createEffect((params?: typicodeApi.tasks.GetTasksListParams) => {
   return typicodeApi.tasks.getTasksList(params);
 });
@@ -29,7 +28,6 @@ export const normalizeTask = (data: Task) => normalize(data, taskSchema);
 export const normalizeTasks = (data: Task[]) => normalize(data, [taskSchema]);
 
 
-// В рамках демо некритично, но можно хранить и в виде массива без нормализации
 export const tasksInitialState: Record<number, Task> = {};
 export const $tasks = createStore(tasksInitialState)
   .on(getTasksListFx.doneData, (_, payload) => normalizeTasks(payload.data).entities.tasks)
