@@ -14,7 +14,6 @@ export const TaskRow = ({ data, before, titleHref }: TaskRowProps) => {
     const title = titleHref ? <Link to={titleHref}>{data.title}</Link> : data.title
 
     return (
-        // Можно смело использовать classnames и аналоги
         <Row className={cn(styles.root, { [styles.completed]: data.completed })}>
             {before}
             {title}

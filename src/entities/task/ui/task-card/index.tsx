@@ -9,12 +9,10 @@ export type TaskCardProps = PropsWithChildren<{
 }> & import("antd").CardProps;
 
 export const TaskCard = ({ data, titleHref, children, ...cardProps }: TaskCardProps) => {
-    // Можно обработать и получше при желании
     if (!data && !cardProps.loading) return null;
 
     return (
         <Card
-            // Можно обработать и получше при желании
             title={`Task#${cardProps.loading ? "" : data?.id}`}
             className={styles.root}
             {...cardProps}
